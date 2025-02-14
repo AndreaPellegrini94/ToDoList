@@ -1,0 +1,79 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@using ToDoList.Api.Models
+@inject ToDoService ToDoService
+
+<PageTitle>Todo List</PageTitle>
+
+<h1>ToDo list</h1>
+
+<input placeholder="Aggiungere attività" @bind="activity" />
+<button @onclick="async () => await AddToDo()">Add</button>
+
+<table style="width: 100%; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th colspan="3" style="text-align: left; padding-bottom: 20px;">
+                Attività da fare oggi @DateTime.Now.ToString("dd/MM/yyyy"):
+            </th>
+        </tr>
+        <tr>
+            <th style="width: 10%; text-align: center;">✔</th>
+            <th style="width: 80%; text-align: left;">Attività</th>
+            <th style="width: 80%; text-align: center;">Salva</th>
+            <th style="width: 10%; text-align: center;">Cancella</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var todo in toDos)
+        {
+            <tr>
+                <td style="text-align: center;">
+                    <input type="checkbox" @bind="todo.IsDone" />
+                </td>
+                <td>
+                    <input @bind="todo.Title" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;" />
+                </td>
+                <td style="text-align: center;">
+                    <button @onclick="async () => await UpdateStatus(todo)">
+                        💾
+                    </button>
+                </td>
+                <td style="text-align: center;">
+                    <button @onclick="async () => await DeleteToDo(todo.Id)">
+                        🗑️
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@code {
+    private List<ToDoItem> toDos = new();
+    private string activity;
+
+    protected override async Task OnInitializedAsync() => toDos = await ToDoService.GetToDosAsync();
+
+    private async Task AddToDo() 
+    {
+        await ToDoService.AddToDoAsync(activity);
+        toDos = await ToDoService.GetToDosAsync();//richiamo njuovamnete la lista intera per aggiornare la tabella. La chiata a bd funziona, ma non vivne mostrato aggiunto in lista il nuovo elemento
+        StateHasChanged();//mi serve per rescare la homepage
+    }
+
+    private async Task UpdateStatus(ToDoItem todo)
+    {
+        await ToDoService.UpdateToDoAsync(todo);//non mi serve fare nessun refresh o mostrare nulla di nuovo (l'utente avrá giá una sua visione di insieme)
+    }
+
+
+    private async Task DeleteToDo(int id) 
+    {
+        await ToDoService.DeleteToDoAsync(id);
+        toDos.Remove(toDos.FirstOrDefault(x => x.Id == id));//anche qui non devo ricaricare gli elementi in pagina, mi basta toiglierlo dalla lista ToDos
+    }
+
+
+}
