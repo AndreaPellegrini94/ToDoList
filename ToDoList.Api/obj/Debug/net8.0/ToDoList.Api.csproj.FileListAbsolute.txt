@@ -159,4 +159,10 @@ C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net8.0\refint\ToDoList.Api.dll
 C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net8.0\ToDoList.Api.pdb
 C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net8.0\ToDoList.Api.genruntimeconfig.cache
 C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net8.0\ref\ToDoList.Api.dll
+C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net8.0\ToDoList.Api.sourcelink.json
+C:\cs12dotnet8\ToDoList\ToDoList.Api\bin\Debug\net8.0\Microsoft.Bcl.Memory.dll
+C:\cs12dotnet8\ToDoList\ToDoList.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\cs12dotnet8\ToDoList\ToDoList.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\cs12dotnet8\ToDoList\ToDoList.Api\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\cs12dotnet8\ToDoList\ToDoList.Api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
