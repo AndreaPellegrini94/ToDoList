@@ -206,3 +206,4 @@ C:\cs12dotnet8\ToDoList\ToDoList\bin\Debug\net8.0\runtimes\win-x86\native\e_sqli
 C:\cs12dotnet8\ToDoList\ToDoList\bin\Debug\net8.0\ToDoList.Api.dll
 C:\cs12dotnet8\ToDoList\ToDoList\bin\Debug\net8.0\ToDoList.Api.pdb
 C:\cs12dotnet8\ToDoList\ToDoList\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\cs12dotnet8\ToDoList\ToDoList\obj\Debug\net8.0\ToDoList.sourcelink.json
