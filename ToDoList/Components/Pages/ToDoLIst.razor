@@ -2,6 +2,7 @@
 @using ToDoList.Api.Models
 @inject AuthService AuthService
 @inject ToDoService ToDoService
+@inject NavigationManager _navigation
 @rendermode RenderMode.InteractiveServer
 
 <PageTitle>Todo List</PageTitle>
@@ -51,6 +52,10 @@
     </tbody>
 </table>
 
+<div>
+  <button type="submit" class="btn btn-danger"@onclick="async () => await LogOut()">Logout</button>
+</div>
+
 @code {
     private List<ToDoItem> toDos = new();
     private string activity;
@@ -95,6 +100,12 @@
     {
         toDos = await ToDoService.GetToDosAsync();
         StateHasChanged(); 
+    }
+
+    private async Task LogOut()
+    {
+        await AuthService.LogoutAsync();
+        _navigation.NavigateTo("/login");
     }
 
 }

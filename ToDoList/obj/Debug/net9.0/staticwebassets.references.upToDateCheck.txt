@@ -194,3 +194,6 @@ C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net9.0\staticwebassets.build.json
 C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net9.0\staticwebassets.build.json
 C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net9.0\staticwebassets.build.json
 C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net9.0\staticwebassets.build.json
+C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net9.0\staticwebassets.build.json
+C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net9.0\staticwebassets.build.json
+C:\cs12dotnet8\ToDoList\ToDoList.Api\obj\Debug\net9.0\staticwebassets.build.json
