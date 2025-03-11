@@ -1,7 +1,0 @@
-C:\cs12dotnet8\ToDoList\ToDoList\wwwroot\app.css
-C:\cs12dotnet8\ToDoList\ToDoList\wwwroot\bootstrap\bootstrap.min.css.map
-C:\cs12dotnet8\ToDoList\ToDoList\wwwroot\bootstrap\bootstrap.min.css
-wwwroot\app.css
-wwwroot\bootstrap\bootstrap.min.css
-wwwroot\bootstrap\bootstrap.min.css.map
-wwwroot\favicon.png
