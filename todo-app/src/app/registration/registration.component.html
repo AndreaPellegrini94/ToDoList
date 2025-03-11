@@ -1,0 +1,44 @@
+
+
+
+<div class="container">
+    <div class="row vh-100 align-items-center">
+        <div class="col-xxl-4 offset-xxl-4 col-lg-6 offset-lg-3 col-10 offset-1">
+            <div class="rounded-5 border-0 shadow-lg bg-white" style="min-height: 450px;">
+                <div class="d-flex justify-content-start align-items-center">
+                    <div class="p-5 w-100">
+                        
+                        <div class = "mt-4 text-success">
+                            <h2>User Registration</h2>
+                        </div>
+                        
+                        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                            <div class="mb-3">
+                                <input class="form-control bg-body-secondary" 
+                                placeholder="Name" formControlName="username">
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-control bg-body-secondary" 
+                                placeholder="Email" formControlName="email">
+                            </div>
+                            <div class="mb-3">
+                                <input type="password" class="form-control bg-body-secondary" 
+                                placeholder="Password" formControlName="password">
+                            </div>
+                            <div class="mt-3">
+                                <button type="submit" class="btn btn-success w-100 rounded-4">Register</button>
+                            </div>
+                        </form>
+
+                        <div class = "mt-4 text-dark">
+                            <h6 style ="padding-bottom: 4px;" >If you are arleady an user, please login here: </h6>
+                            <button class="btn btn-warning w-100 rounded-4" (click)="goBack()"> Login</button>    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

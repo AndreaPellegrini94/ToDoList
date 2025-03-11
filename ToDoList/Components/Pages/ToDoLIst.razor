@@ -1,0 +1,112 @@
+﻿@page "/todolist"
+@using ToDoList.Api.Models
+@inject AuthService AuthService
+@inject ToDoService ToDoService
+@inject NavigationManager _navigation
+@rendermode RenderMode.InteractiveServer
+
+<PageTitle>Todo List</PageTitle>
+
+<h1>ToDo list</h1>
+
+<input placeholder="Aggiungere attività" @bind="activity" />
+<button @onclick="async () => await AddToDo()">Add</button>
+
+<table style="width: 100%; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th colspan="3" style="text-align: left; padding-bottom: 20px;">
+                Attività da fare oggi @DateTime.Now.ToString("dd/MM/yyyy"):
+            </th>
+        </tr>
+        <tr>
+            <th style="width: 10%; text-align: center;">✔</th>
+            <th style="width: 80%; text-align: left;">Attività</th>
+            <th style="width: 80%; text-align: center;">Salva</th>
+            <th style="width: 10%; text-align: center;">Cancella</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach (var todo in toDos)
+        {
+            <tr>
+                <td style="text-align: center;">
+                    <input type="checkbox" @bind="todo.IsDone" />
+                </td>
+                <td>
+                    <input @bind="todo.Title" style="width: 100%; padding: 5px; border: 1px solid #ccc; border-radius: 4px;" />
+                </td>
+                <td style="text-align: center;">
+                    <button @onclick="async () => await UpdateStatus(todo)">
+                        💾
+                    </button>
+                </td>
+                <td style="text-align: center;">
+                    <button @onclick="async () => await DeleteToDo(todo.Id)">
+                        🗑️
+                    </button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+  <button type="submit" class="btn btn-danger"@onclick="async () => await LogOut()">Logout</button>
+</div>
+
+@code {
+    private List<ToDoItem> toDos = new();
+    private string activity;
+    private bool tokenLoaded = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            var token = await AuthService.GetTokenAsync();
+            if (!string.IsNullOrEmpty(token))
+            {
+                ToDoService.SetAuthorizationToken(token);
+                await LoadToDos();
+            }
+        }
+    }
+
+    private async Task AddToDo()
+    {
+        Console.WriteLine(activity);//debug
+        await ToDoService.AddToDoAsync(activity);
+        activity = string.Empty; 
+        await LoadToDos();
+    }
+
+    private async Task UpdateStatus(ToDoItem todo)
+    {
+        await ToDoService.UpdateToDoAsync(todo);
+        await LoadToDos(); 
+    }
+
+    private async Task DeleteToDo(int id)
+    {
+        await ToDoService.DeleteToDoAsync(id);
+        await LoadToDos();
+    }
+    
+    
+    
+    private async Task LoadToDos()
+    {
+        toDos = await ToDoService.GetToDosAsync();
+        StateHasChanged(); 
+    }
+
+    private async Task LogOut()
+    {
+        await AuthService.LogoutAsync();
+        _navigation.NavigateTo("/login");
+    }
+
+}
+

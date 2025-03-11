@@ -1,0 +1,27 @@
+header {
+    display: flex;
+    padding-inline: 20px;
+    padding-block: 10px;
+    background-color: #3154ee;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+div{
+    display: flex;
+    padding-inline: 20px;
+    padding-block: 10px;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list a{
+    margin-right: 10px; 
+}
+
+.list a:hover{
+    cursor: pointer
+}

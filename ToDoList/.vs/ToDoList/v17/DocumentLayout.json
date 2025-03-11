@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|c:\\cs12dotnet8\\todolist\\todolist\\service\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|solutionrelative:service\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|c:\\cs12dotnet8\\todolist\\todolist\\components\\pages\\todolist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|solutionrelative:components\\pages\\todolist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|c:\\cs12dotnet8\\todolist\\todolist\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|solutionrelative:service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Program.cs",
+              "RelativeDocumentMoniker": "..\\ToDoList.Api\\Program.cs",
+              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Program.cs",
+              "RelativeToolTip": "..\\ToDoList.Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T09:12:42.393Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Service\\AuthService.cs",
+              "RelativeDocumentMoniker": "Service\\AuthService.cs",
+              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Service\\AuthService.cs",
+              "RelativeToolTip": "Service\\AuthService.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAuwEAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T10:42:11.671Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ToDoLIst.razor",
+              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Components\\Pages\\ToDoLIst.razor",
+              "RelativeDocumentMoniker": "Components\\Pages\\ToDoLIst.razor",
+              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Components\\Pages\\ToDoLIst.razor",
+              "RelativeToolTip": "Components\\Pages\\ToDoLIst.razor",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAAEMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-06T10:41:22.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ToDoService.cs",
+              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Service\\ToDoService.cs",
+              "RelativeDocumentMoniker": "Service\\ToDoService.cs",
+              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Service\\ToDoService.cs",
+              "RelativeToolTip": "Service\\ToDoService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAowFIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T10:23:17.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "..\\ToDoList.Api\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "..\\ToDoList.Api\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAgwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T09:22:37.61Z"
+            }
+          ]
+        },
+        {
+          "DockedHeight": 714,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
