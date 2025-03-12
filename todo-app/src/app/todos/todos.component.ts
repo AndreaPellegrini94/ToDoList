@@ -5,7 +5,9 @@ import { todoItem } from '../models/todo.types';
 import { catchError } from 'rxjs';
 import { FormsModule } from '@angular/forms';
 import { HighlightCompletedTodoDirective } from '../directives/highlight-completed-todo.directive';
-
+import { AuthService } from '../services/auth.service';
+import { ToastrService } from 'ngx-toastr';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-todos',
@@ -16,11 +18,18 @@ import { HighlightCompletedTodoDirective } from '../directives/highlight-complet
 })
 export class TodosComponent implements OnInit {
   todoService = inject(TodosService);
+  authService = inject(AuthService);
+  toastr = inject(ToastrService);
+  route = inject(Router);
   todoItems = signal<Array<todoItem>>([]);  // Signal per gestire lo stato dei ToDo
   newTodoTitle: string = '';  //titolo del todo che voglio modificare
   editTodoId: number | null = null ; //contenitore per gestire l íd del todo di cui voglio modificare il testo
 
   ngOnInit(): void {
+
+    const token = this.authService.getToken();
+    
+    if(token != null){
     this.todoService.getUserTodos()
       .pipe(
         catchError((err) => {
@@ -31,6 +40,11 @@ export class TodosComponent implements OnInit {
       .subscribe((todos) => {
         this.todoItems.set(todos);  // Imposta i ToDo iniziali dalla risposta
       });
+    }
+    else{
+      this.toastr.error('You are not loged in: please go to login or register first.')
+      this.route.navigateByUrl("/");
+    }
   }
 
   addTodo(): void {
