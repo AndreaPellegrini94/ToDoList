@@ -33,7 +33,8 @@ export class AuthService {
   getToken(): string | null {
     return sessionStorage.getItem(this.tokenKey);
   }
-
+  
+  
   // Metodo per rimuovere il token (logout)
   logoutUser(): void {
     sessionStorage.removeItem(this.tokenKey);

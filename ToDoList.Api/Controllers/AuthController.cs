@@ -40,7 +40,7 @@ public class AuthController : ControllerBase
         }
 
         var result = await _signInManager.CheckPasswordSignInAsync(user, model.Password,false);
-
+ 
         if (result.Succeeded)
         {
             var token = GenerateJWTToken(user);

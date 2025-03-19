@@ -3,10 +3,17 @@ import { inject } from '@angular/core';
 import { AuthService } from './auth.service';
 
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
-  const authService = inject(AuthService);
-  //const token = authService.getToken();
-  const token = typeof window !== 'undefined' ? authService.getToken() : null;
-  console.log('Interceptor - Token recuperato:', token);
+  let authService : AuthService;
+  
+  try {
+    authService = inject(AuthService);
+  } catch (e) {
+    console.error("AuthService non è disponibile nel contesto corrente:", e);
+    return next(req);
+  }
+
+  const token = authService.getToken();
+
 
   if (token) {
     const cloned = req.clone({
