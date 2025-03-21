@@ -2,11 +2,11 @@
 
 namespace ToDoList.Api.Models;
 
-public class Register
+
+public class UpdateUser
 {
-    public string UserName { get; set; }
     [ValidEmail]
     public string Email { get; set; }
-    public string Password { get; set; }
-
+    public string CurrentPassword { get; set; }
+    public string NewPassword { get; set; }
 }

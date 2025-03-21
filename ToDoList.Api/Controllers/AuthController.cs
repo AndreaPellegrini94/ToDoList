@@ -6,6 +6,7 @@ using System.Security.Claims;
 using System.Text;
 using ToDoList.Api.Models;
 using System.Text.RegularExpressions;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace ToDoList.Api.Controllers;
 
@@ -61,7 +62,7 @@ public class AuthController : ControllerBase
             return BadRequest("Invalid registration request.");
         }
 
-        if(!IsValidEmail(model.Email))
+        if(!ModelState.IsValid)
         {
             return BadRequest("Invalid email.");
         }
@@ -103,10 +104,5 @@ public class AuthController : ControllerBase
 
     }
 
-    // Funzione per validare l'email con una Regular Expression
-    private bool IsValidEmail(string email)
-    {
-        string pattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$"; // Regex per email base
-        return Regex.IsMatch(email, pattern);
-    }
+  
 }

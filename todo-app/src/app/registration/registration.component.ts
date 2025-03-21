@@ -41,15 +41,31 @@ export class RegistrationComponent {
 
         },
         error:(err:any)=>{
-       
-          if(err.error == 'Invalid email.'){
-            this.toastr.error(err.error,"Please Tray Again")
-            
+      
+
+          if (typeof err.error === "string") {
+            // Caso in cui l'errore è un semplice messaggio stringa
+            this.toastr.error(err.error, "Validation Error");
+          } 
+          else if (Array.isArray(err.error)) {
+            // Caso in cui il backend restituisce un array di errori
+            err.error.forEach((e: any) => {
+              this.toastr.error(e.description, "Validation Error");
+            });
+          } 
+          else if (err.error && err.error.errors) {
+            // Caso classico degli errori di validazione modello
+            Object.entries(err.error.errors).forEach(([key, messages]) => {
+              (messages as string[]).forEach((message: string) => {
+                this.toastr.error(message, "Validation Error");
+              });
+            });
+          } 
+          else {
+            // Caso fallback per errori sconosciuti
+            this.toastr.error("Something went wrong. Please try again.", "Error");
           }
-          else{
-            
-            this.toastr.error(`${err.error[0].description}`,"Please Tray Again")
-          }
+        
         }
       })
   }
