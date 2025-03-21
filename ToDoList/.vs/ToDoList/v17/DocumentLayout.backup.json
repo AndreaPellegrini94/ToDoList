@@ -3,31 +3,25 @@
   "WorkspaceRootPath": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\models\\updateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\models\\validation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\controllers\\todolistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\data\\tododata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|c:\\cs12dotnet8\\todolist\\todolist\\service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|solutionrelative:service\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|c:\\cs12dotnet8\\todolist\\todolist\\service\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|solutionrelative:service\\todoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|c:\\cs12dotnet8\\todolist\\todolist\\components\\pages\\todolist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2A2630F1-8098-402B-9ED4-EAB45C15D72D}|ToDoList.csproj|solutionrelative:components\\pages\\todolist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -36,12 +30,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 200,
-          "SelectedChildIndex": 8,
+          "DockedHeight": 255,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Program.cs",
               "RelativeDocumentMoniker": "..\\ToDoList.Api\\Program.cs",
@@ -55,41 +49,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.cs",
-              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\Register.cs",
-              "RelativeDocumentMoniker": "..\\ToDoList.Api\\Models\\Register.cs",
-              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\Register.cs",
-              "RelativeToolTip": "..\\ToDoList.Api\\Models\\Register.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Validation.cs",
+              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\Validation.cs",
+              "RelativeDocumentMoniker": "..\\ToDoList.Api\\Models\\Validation.cs",
+              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\Validation.cs",
+              "RelativeToolTip": "..\\ToDoList.Api\\Models\\Validation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:09:14.372Z",
+              "WhenOpened": "2025-03-21T15:07:24.015Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "UpdateUser.cs",
+              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\UpdateUser.cs",
+              "RelativeDocumentMoniker": "..\\ToDoList.Api\\Models\\UpdateUser.cs",
+              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\UpdateUser.cs",
+              "RelativeToolTip": "..\\ToDoList.Api\\Models\\UpdateUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T14:51:10.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "..\\ToDoList.Api\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "..\\ToDoList.Api\\Controllers\\UserController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAADkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T14:23:16.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "ToDoListController.cs",
               "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\ToDoListController.cs",
               "RelativeDocumentMoniker": "..\\ToDoList.Api\\Controllers\\ToDoListController.cs",
               "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\ToDoListController.cs",
               "RelativeToolTip": "..\\ToDoList.Api\\Controllers\\ToDoListController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:07:34.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ToDoData.cs",
-              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Data\\ToDoData.cs",
-              "RelativeDocumentMoniker": "..\\ToDoList.Api\\Data\\ToDoData.cs",
-              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Data\\ToDoData.cs",
-              "RelativeToolTip": "..\\ToDoList.Api\\Data\\ToDoData.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-14T14:07:28.467Z",
+              "WhenOpened": "2025-03-21T14:19:09.111Z",
               "EditorCaption": ""
             },
             {
@@ -98,58 +105,34 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Service\\AuthService.cs",
-              "RelativeDocumentMoniker": "Service\\AuthService.cs",
-              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Service\\AuthService.cs",
-              "RelativeToolTip": "Service\\AuthService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T10:42:11.671Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ToDoLIst.razor",
-              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Components\\Pages\\ToDoLIst.razor",
-              "RelativeDocumentMoniker": "Components\\Pages\\ToDoLIst.razor",
-              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Components\\Pages\\ToDoLIst.razor",
-              "RelativeToolTip": "Components\\Pages\\ToDoLIst.razor",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAAEMAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-06T10:41:22.175Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ToDoService.cs",
-              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Service\\ToDoService.cs",
-              "RelativeDocumentMoniker": "Service\\ToDoService.cs",
-              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList\\Service\\ToDoService.cs",
-              "RelativeToolTip": "Service\\ToDoService.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAowFIAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T10:23:17.715Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "..\\ToDoList.Api\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\AuthController.cs*",
               "RelativeToolTip": "..\\ToDoList.Api\\Controllers\\AuthController.cs*",
-              "ViewState": "AgIAACkAAAAAAAAAAAAAACoAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAYwEAAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T09:22:37.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Register.cs",
+              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\Register.cs",
+              "RelativeDocumentMoniker": "..\\ToDoList.Api\\Models\\Register.cs",
+              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\Register.cs",
+              "RelativeToolTip": "..\\ToDoList.Api\\Models\\Register.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T14:09:14.372Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedHeight": 714,
+          "DockedHeight": 132,
           "SelectedChildIndex": -1,
           "Children": [
             {
@@ -159,7 +142,13 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
+            }
+          ]
+        },
+        {
+          "DockedHeight": 714,
+          "SelectedChildIndex": -1,
+          "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
