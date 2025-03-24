@@ -26,12 +26,15 @@ export class AuthService {
 
   // Metodo per salvare il token
   saveToken(token: string): void {
-    sessionStorage.setItem(this.tokenKey, token); // Usa localStorage se vuoi che il token resti dopo la chiusura del browser
+    sessionStorage.setItem(this.tokenKey, token); 
   }
 
   // Metodo per recuperare il token
   getToken(): string | null {
-    return sessionStorage.getItem(this.tokenKey);
+    if (typeof sessionStorage !== 'undefined'){
+      return sessionStorage.getItem(this.tokenKey);
+    }
+    return null;
   }
   
   

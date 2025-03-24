@@ -31,7 +31,10 @@ public class UserController : Controller
     {
         var UserID = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;//dovrebbe darmi l'identificativo dell'utente
 
-        if (UserID == null) return Unauthorized("User ID not found");
+        if (UserID == null)
+        {
+            return Unauthorized("User ID not found");
+        }
 
         var user = await _context.Users
             .Where(x => x.Id == UserID)
@@ -46,18 +49,24 @@ public class UserController : Controller
     {
         var UserID = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
 
-        if (UserID == null) return Unauthorized("You are not Utorized do modify this User");
+        if (UserID == null)
+        {
+            return Unauthorized("You are not Utorized do modify this User");
+        }
 
         var user = await _userManager.FindByIdAsync(UserID);
 
-        if (user == null) return NotFound("User not found");
+        if (user == null)
+        {
+            return NotFound("User not found");
+        }
 
         if (!ModelState.IsValid)
         {
             return BadRequest("Invalid email.");
         }
 
-        var errors = new List<string>();
+        var errors = new List<string>();//lista di errori possibili, aggiungeró una stinga differente ad ongi stato
 
         if (!string.IsNullOrEmpty(model.Email) && model.Email != user.Email)
         {
@@ -106,6 +115,34 @@ public class UserController : Controller
         if (result.Succeeded)
         {
             return Ok("Updete sucesssful");
+        }
+        else
+        {
+            return BadRequest(result.Errors);
+        }
+
+    }
+    [HttpDelete("Delete")]
+    public async Task<IActionResult> DeletUsert()
+    {
+        var UserID = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+        if (UserID == null)
+        {
+            return Unauthorized("You are not Utorized do modify this User");
+        }
+        var user = await _userManager.FindByIdAsync(UserID);
+
+        if (user == null)
+        {
+            return NotFound("User not found");
+        }
+
+        var result = await _userManager.DeleteAsync(user);
+
+        if (result.Succeeded)
+        {
+            return Ok("Delete sucesssful");
         }
         else
         {
