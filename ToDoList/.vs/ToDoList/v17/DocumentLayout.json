@@ -52,7 +52,7 @@
               "RelativeDocumentMoniker": "..\\ToDoList.Api\\Controllers\\UserController.cs",
               "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\UserController.cs",
               "RelativeToolTip": "..\\ToDoList.Api\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAgwCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAIwJkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T14:23:16.967Z",
               "EditorCaption": ""
@@ -67,8 +67,7 @@
               "RelativeToolTip": "..\\ToDoList.Api\\Controllers\\ToDoListController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-21T14:19:09.111Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-21T14:19:09.111Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "..\\ToDoList.Api\\Controllers\\AuthController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T09:22:37.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T09:22:37.61Z"
             },
             {
               "$type": "Document",

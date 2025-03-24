@@ -41,10 +41,11 @@ export class TodosComponent implements OnInit {
         this.todoItems.set(todos);  // Imposta i ToDo iniziali dalla risposta
       });
     }
-    else{
+    else {
       this.toastr.error('You are not loged in: please go to login or register first.')
       this.route.navigateByUrl("/");
     }
+  
   }
 
   addTodo(): void {

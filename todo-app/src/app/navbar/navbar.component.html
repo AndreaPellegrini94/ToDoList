@@ -1,0 +1,8 @@
+<nav *ngIf="isAuthenticated()">
+    <ul>
+      <li><button (click)="viewProfile()">Profilo</button></li>
+      <li><button (click)="editProfile()">Modifica Profilo</button></li>
+      <li><button (click)="deleteAccount()">Elimina Account</button></li>
+    </ul>
+  </nav>
+  

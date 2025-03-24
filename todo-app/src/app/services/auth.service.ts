@@ -31,12 +31,9 @@ export class AuthService {
 
   // Metodo per recuperare il token
   getToken(): string | null {
-    if (typeof sessionStorage !== 'undefined'){
       return sessionStorage.getItem(this.tokenKey);
-    }
-    return null;
+    
   }
-  
   
   // Metodo per rimuovere il token (logout)
   logoutUser(): void {
