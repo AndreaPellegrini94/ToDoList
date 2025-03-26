@@ -6,10 +6,13 @@
       "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\models\\updateuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\controllers\\todolistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9EB638E2-1DE6-4F49-AD51-6143BAF88726}|..\\ToDoList.Api\\ToDoList.Api.csproj|c:\\cs12dotnet8\\todolist\\todolist.api\\models\\register.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -24,12 +27,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 353,
-          "SelectedChildIndex": 2,
+          "DockedHeight": 267,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Program.cs",
               "RelativeDocumentMoniker": "..\\ToDoList.Api\\Program.cs",
@@ -46,13 +49,25 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UpdateUser.cs",
+              "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\UpdateUser.cs",
+              "RelativeDocumentMoniker": "..\\ToDoList.Api\\Models\\UpdateUser.cs",
+              "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\UpdateUser.cs",
+              "RelativeToolTip": "..\\ToDoList.Api\\Models\\UpdateUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T09:40:59.805Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserController.cs",
               "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "..\\ToDoList.Api\\Controllers\\UserController.cs",
               "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\UserController.cs",
               "RelativeToolTip": "..\\ToDoList.Api\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAIwJkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAiwF4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T14:23:16.967Z",
               "EditorCaption": ""
@@ -65,13 +80,13 @@
               "RelativeDocumentMoniker": "..\\ToDoList.Api\\Controllers\\ToDoListController.cs",
               "ToolTip": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\ToDoListController.cs",
               "RelativeToolTip": "..\\ToDoList.Api\\Controllers\\ToDoListController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-21T14:19:09.111Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "..\\ToDoList.Api\\Controllers\\AuthController.cs",
@@ -83,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Register.cs",
               "DocumentMoniker": "C:\\cs12dotnet8\\ToDoList\\ToDoList.Api\\Models\\Register.cs",
               "RelativeDocumentMoniker": "..\\ToDoList.Api\\Models\\Register.cs",
@@ -96,7 +111,7 @@
           ]
         },
         {
-          "DockedHeight": 34,
+          "DockedHeight": 120,
           "SelectedChildIndex": -1,
           "Children": [
             {

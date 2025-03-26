@@ -18,17 +18,6 @@ export class HeaderComponent {
     return this.authService.getToken() !== null;
   }
 
-  logout(): void {
-    const confirmation = window.confirm('Do you want to logout?');
-    if(confirmation){
-      this.authService.logoutUser();
-      this.router.navigate(['/']); 
-    }
-  }
-
-  gotoTodoLis(){
-    this.router.navigate(['/todos']); 
-  }
 
   getUserName(): string {
     const token = sessionStorage.getItem('authToken');

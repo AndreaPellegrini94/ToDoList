@@ -38,90 +38,74 @@ public class UserController : Controller
 
         var user = await _context.Users
             .Where(x => x.Id == UserID)
+            .Select(x => new
+            {
+                x.Email
+            })
             .FirstOrDefaultAsync();
 
 
         return Ok(user);
     }
 
-    [HttpPut("Update")]//mi permette di modificare i dati dell'utente loggato
-    public async Task<IActionResult> UpdateUser([FromBody] UpdateUser model)
+    [HttpPut("Update")]
+    public async Task<IActionResult> UpdateUser([FromBody] UpdatePassword model)
     {
-        var UserID = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+        if (model == null || string.IsNullOrEmpty(model.CurrentPassword) || string.IsNullOrEmpty(model.NewPassword))
+        {
+            return BadRequest("Invalid update request. Both current and new password are required.");
+        }
 
+        var UserID = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
         if (UserID == null)
         {
-            return Unauthorized("You are not Utorized do modify this User");
+            return Unauthorized("You are not authorized to modify this user.");
         }
 
         var user = await _userManager.FindByIdAsync(UserID);
-
         if (user == null)
         {
-            return NotFound("User not found");
-        }
-
-        if (!ModelState.IsValid)
-        {
-            return BadRequest("Invalid email.");
-        }
-
-        var errors = new List<string>();//lista di errori possibili, aggiungeró una stinga differente ad ongi stato
-
-        if (!string.IsNullOrEmpty(model.Email) && model.Email != user.Email)
-        {
-            var existingUser = await _userManager.FindByEmailAsync(model.Email);
-            if (existingUser != null)
-            {
-                errors.Add("Email already in use.");
-            }
-            else
-            {
-                user.Email = model.Email;
-            }
+            return NotFound("User not found.");
         }
 
         // **Gestione cambio password**
-        if (!string.IsNullOrEmpty(model.NewPassword))
+        if (string.IsNullOrEmpty(model.NewPassword))
         {
-            if (string.IsNullOrEmpty(model.CurrentPassword))
-            {
-                errors.Add("Current password is required to change the password.");
-            }
-            else
-            {
-                var checkPassword = await _userManager.CheckPasswordAsync(user, model.CurrentPassword);
-                if (!checkPassword)
-                {
-                    errors.Add("Current password is incorrect.");
-                }
-                else
-                {
-                    var passwordResult = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
-                    if (!passwordResult.Succeeded)
-                    {
-                        errors.AddRange(passwordResult.Errors.Select(e => e.Description));
-                    }
-                }
-            }
+            return BadRequest("New password cannot be empty.");
         }
 
-        if (errors.Any())
+        // Verifica che la password corrente sia corretta
+        var checkPassword = await _userManager.CheckPasswordAsync(user, model.CurrentPassword);
+        if (!checkPassword)
         {
-            return BadRequest(errors);
+            return BadRequest("Current password is incorrect.");
         }
 
-        var result = await _userManager.UpdateAsync(user);
-        if (result.Succeeded)
+        // Verifica che la nuova password sia diversa dalla corrente
+        if (model.CurrentPassword == model.NewPassword)
         {
-            return Ok("Updete sucesssful");
-        }
-        else
-        {
-            return BadRequest(result.Errors);
+            return BadRequest("New password must be different from the current password.");
         }
 
+        // Verifica la complessità della nuova password
+        var passwordValidationResult = await _userManager.PasswordValidators.First().ValidateAsync(_userManager, user, model.NewPassword);
+        if (!passwordValidationResult.Succeeded)
+        {
+            return BadRequest(passwordValidationResult.Errors.Select(e => e.Description));
+        }
+
+        // Cambia la password
+        var passwordResult = await _userManager.ChangePasswordAsync(user, model.CurrentPassword, model.NewPassword);
+        if (!passwordResult.Succeeded)
+        {
+            return BadRequest(passwordResult.Errors.Select(e => e.Description));
+        }
+
+        return Ok("Update successful");
     }
+
+
+
     [HttpDelete("Delete")]
     public async Task<IActionResult> DeletUsert()
     {

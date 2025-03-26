@@ -14,6 +14,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
     <app-login></app-login>
     <app-registration></app-registration>
     <app-todos></app-todos>
+    <app-profile></app-profile>
     <main>
     </main>
     <router-outlet/>

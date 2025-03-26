@@ -27,5 +27,13 @@ export const routes: Routes = [
                 m=>m.TodosComponent
                 )
         }
+    },
+    {
+        path: 'profile',
+        loadComponent:()=>{
+            return import('./profile/profile.component').then(
+                m=>m.ProfileComponent
+                )
+        }
     }
 ];

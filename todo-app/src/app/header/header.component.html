@@ -6,11 +6,5 @@
 
     <div *ngIf="isAuthenticated()">        
         <h3>What are we doing today {{getUserName()}}?</h3>
-        <div class="list">
-            
-            <a  (click)="logout()">Logout</a>
-            <a  (click)="gotoTodoLis()">Go to your ToDoList</a>
-          
-        </div>
     </div>
 </header>

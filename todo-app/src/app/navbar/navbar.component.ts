@@ -20,20 +20,27 @@ export class NavbarComponent {
     return this.authService.getToken() !== null;
   }
 
+  isOnTodos():boolean {
+    return this.router.url !== '/todos';
+  }
+
+  isOnProfile():boolean{
+    return this.router.url !== '/profile';
+  }
+
   viewProfile() {
     this.router.navigate(['/profile']);
   }
 
-  editProfile() {
-    this.router.navigate(['/edit-profile']);
+  gotoTodoLis(){
+    this.router.navigate(['/todos']); 
   }
 
-  deleteAccount() {
-    if (confirm('Sei sicuro di voler eliminare il tuo account?')) {
-      this.userService.deleteUser().subscribe(() => {
-        alert('Account eliminato con successo');
-        this.router.navigate(['/login']);
-      });
+  logout(): void {
+    const confirmation = window.confirm('Do you want to logout?');
+    if(confirmation){
+      this.authService.logoutUser();
+      this.router.navigate(['/']); 
     }
   }
 

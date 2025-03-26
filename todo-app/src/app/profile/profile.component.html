@@ -1,0 +1,42 @@
+
+
+
+<div class="container">
+    <div class="row vh-100 align-items-center">
+        <div class="col-xxl offset-xl col-lg">
+            <div class="rounded-5 border-0 shadow-lg bg-white" style="min-height: 600px;">
+                <div class="d-flex justify-content-start align-items-center">
+                    <div class="p-5 w-100">
+                        <h3>Profilo Utente</h3>
+                        <div class="email-section">
+                            <p><strong>Email:</strong> {{ emailItem() }}</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div style="padding-bottom: 10x;">
+                    <h6 style ="padding-bottom: 2px;" >If you want to change password: </h6>
+                    <button class="btn btn-warning" (click)="showPasswordForm = true" *ngIf="!showPasswordForm">Change password</button>
+                    <div *ngIf="showPasswordForm" [formGroup]="passwordForm">
+                        <div class="mb-3">
+                            <label for="currentPassword" class="form-label">Current Password</label>
+                            <input type="password" id="currentPassword" class="form-control" formControlName="currentPassword">
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPassword" class="form-label">New Password</label>
+                            <input type="password" id="newPassword" class="form-control" formControlName="newPassword">
+                        </div>
+                        <div class="d-flex justify-content-center gap-2">
+                            <button class="btn btn-success" (click)="updatePassword()">Save</button>
+                            <button class="btn btn-secondary ms-2" (click)="showPasswordForm = false">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h6 style ="padding-bottom: 2px;" >If you want to delete your account: </h6>
+                    <button class="btn btn-danger" (click)="delete()">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
